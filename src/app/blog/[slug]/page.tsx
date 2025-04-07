@@ -3,7 +3,7 @@ import { CustomMDX } from "@/components/mdx";
 import { getPosts } from "@/app/utils/utils";
 import { AvatarGroup, Button, Column, Heading, Row, Text } from "@/once-ui/components";
 import { baseURL } from "@/app/resources";
-import { person } from "@/app/resources/content";
+import { company } from "@/app/resources/content";
 import { formatDate } from "@/app/utils/formatDate";
 import ScrollToHash from "@/components/ScrollToHash";
 
@@ -69,8 +69,8 @@ export default function Blog({ params }: BlogParams) {
   }
 
   const avatars =
-    post.metadata.team?.map((person) => ({
-      src: person.avatar,
+    post.metadata.team?.map((company) => ({
+      src: company.avatar,
     })) || [];
 
   return (
@@ -92,12 +92,18 @@ export default function Blog({ params }: BlogParams) {
             url: `https://${baseURL}/blog/${post.slug}`,
             author: {
               "@type": "Person",
-              name: person.name,
+              name: company.companyName,
             },
           }),
         }}
       />
-      <Button href="/blog" weight="default" variant="tertiary" size="s" prefixIcon="chevronLeft">
+      <Button
+        href="/blog"
+        weight="default"
+        variant="tertiary"
+        size="s"
+        prefixIcon="chevronLeft"
+      >
         Posts
       </Button>
       <Heading variant="display-strong-s">{post.metadata.title}</Heading>

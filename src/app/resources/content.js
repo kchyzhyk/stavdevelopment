@@ -1,76 +1,78 @@
 import { InlineCode } from "@/once-ui/components";
 
-const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+const company = {
+  companyName: "SERVICE STAV DEVELOPMENT",
   get name() {
-    return `${this.firstName} ${this.lastName}`;
+    return `${this.companyName}`;
   },
-  role: "Design Engineer",
+  role: "Stavební firma",
   avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  location: "Europe/Brno", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Český"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Subscribe to {company.companyName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I occasionally write about design, technology, and share thoughts on the
+      intersection of creativity and engineering.
     </>
   ),
 };
 
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
   {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    name: "Instagram",
+    icon: "instagram",
+    link: "https://www.s-stavdevelop.com/",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.s-stavdevelop.com/",
   },
   {
-    name: "X",
-    icon: "x",
-    link: "",
+    name: "Facebook",
+    icon: "facebook",
+    link: "https://www.s-stavdevelop.com/",
   },
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:info.servicestav@gmail.com",
+  },
+  {
+    name: "Phone",
+    icon: "phone",
+    link: "tel:+420773605898",
   },
 ];
 
 const home = {
   label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  title: `SERVICE STAV DEVELOPMENT`,
+  description: `Portfolio website showcasing my work as a ${company.role}`,
+  headline: <>Vaše spokojenost je naší prioritou</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      Stavební a developerská firma{" "}
+      <InlineCode>Brno, Jihomoravský kraj</InlineCode>
     </>
   ),
 };
 
 const about = {
-  label: "About",
-  title: "About me",
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  label: "O nas",
+  title: "O nas",
+  description: `Meet ${company.companyName}, ${company.role} from ${company.location}`,
   tableOfContent: {
     display: true,
     subItems: false,
   },
   avatar: {
-    display: true,
+    display: false,
   },
   calendar: {
     display: true,
@@ -81,32 +83,43 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        <>
+          Jsme rodinná stavební firma s dlouholetou tradicí, která se
+          specializuje na výstavbu vysoce kvalitních staveb.
+        </>
+        <br />
+        <br />
+        <>
+          Naše společnost se pyšní pečlivým přístupem k detailům a osobním
+          nasazením, což nám umožňuje poskytovat služby na nejvyšší úrovni.
+          Každý projekt realizujeme s maximální pečlivostí a důrazem na kvalitu,
+          což zajišťuje spokojenost našich klientů. <br />
+          <br /> Naše rodinné hodnoty se promítají do každé fáze stavebního
+          procesu, od návrhu až po dokončení, a zaručují spolehlivost a důvěru v
+          naše služby. Nejlepším ukazatelem naší kvality je skutečnost, že se k
+          nám naši zákazníci neustále vracejí
+        </>
       </>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
-    experiences: [
+    title: "Naše služby",
+    services: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        serviceName: "Rekonstrukce bytů",
         achievements: [
+          <>Specializujeme se na kompletní rekonstrukce bytů na klíč.</>,
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Nabízíme profesionální přístup, kvalitní řemeslné práce, moderní
+            řešení a osobní dohled nad každou zakázkou.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Zajistíme vše od návrhu po předání – spolehlivě, včas a podle vašich
+            představ.
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/project-01/cover-01.jpg",
             alt: "Once UI Project",
@@ -116,17 +129,146 @@ const about = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        serviceName: "Rekonstrukce domů",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Specializujeme se na výstavbu rodinných domů na klíč s kompletním
+            servisem od prvotního návrhu až po předání hotového domu.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Naši odborníci zajišťují všechny aspekty výstavby, včetně
+            projektování, získání stavebního povolení, výběru kvalitních
+            materiálů a samotné realizace.
+          </>,
+          <>
+            Díky důrazu na vysokou kvalitu práce a využívání moderních
+            technologií splníme všechny vaše představy a požadavky, aby váš nový
+            domov byl přesně takový, jaký si přejete.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        serviceName: "Příprava dokumentace pro zákazníky",
+        achievements: [
+          <>
+            Naše společnost se specializuje na profesionální vedení projektů,
+            které zahrnuje komplexní řízení všech fází stavebního procesu.
+          </>,
+          <>
+            Od úvodního plánování a návrhu, přes koordinaci stavebních prací, až
+            po závěrečnou kontrolu a předání hotového díla.
+          </>,
+          <>
+            Pečlivě dbáme na dodržování stanovených termínů, rozpočtu a vysokých
+            standardů kvality, což zajišťuje úspěšnou realizaci projektů a
+            maximální spokojenost našich klientů.
+          </>,
+        ],
+        images: [],
+      },
+      ,
+      {
+        serviceName: "Výškové a výkopové práce, fasády, rekonstrukce",
+        achievements: [
+          <>
+            Nabízíme široké spektrum služeb v oblasti stavebnictví, včetně
+            výškových prací, renovací fasád, výkopových prací a rekonstrukcí.
+          </>,
+          <>
+            Naše zkušená a odborně vyškolená pracovní síla zajišťuje bezpečnost
+            a kvalitu ve všech fázích projektu.
+          </>,
+          <>
+            Používáme moderní technologie a osvědčené postupy, abychom dosáhli
+            vynikajících výsledků. S námi můžete počítat s precizním provedením
+            a dlouhodobou spolehlivostí našich stavebních řešení.
+          </>,
+        ],
+        images: [],
+      },
+      ,
+      {
+        serviceName:
+          "Architektonické, stavební, odborné inženýrské, rozpočtářské práce",
+        achievements: [
+          <>
+            Poskytujeme komplexní služby v oblasti architektonických,
+            stavebních, odborných inženýrských a rozpočtářských prací.
+          </>,
+          <>
+            Náš zkušený tým odborníků zajišťuje pečlivé plánování a realizaci
+            každého projektu, od návrhu až po dokončení.
+          </>,
+          <>
+            Používáme moderní technologie a osvědčené postupy, abychom dosáhli
+            vysoké kvality a spokojenosti klientů.
+          </>,
+          <>
+            S námi získáte profesionální přístup a spolehlivá řešení pro všechny
+            vaše stavební potřeby.
+          </>,
+        ],
+        images: [],
+      },
+      ,
+      {
+        serviceName: "Sanační práce, zesílení starých budov, chemická injektáž",
+        achievements: [
+          <>
+            Naše služby zahrnují obnovu a posílení konstrukční integrity
+            historických a starších budov, což zajišťuje jejich dlouhodobou
+            stabilitu a bezpečnost.
+          </>,
+          <>
+            Používáme moderní technologie chemické injektáže, které efektivně
+            řeší problémy s vlhkostí a zajišťují trvanlivost staveb.
+          </>,
+          <>
+            Naši odborníci přistupují ke každému projektu s pečlivostí a důrazem
+            na detail, aby dosáhli nejlepších možných výsledků.
+          </>,
+        ],
+        images: [],
+      },
+      ,
+      {
+        serviceName: "Poradenské služby, dodání materiálu, odborné vedení",
+        achievements: [
+          <>
+            Naše firma je vaším partnerem od začátku až do konce projektu,
+            přičemž se zaměřujeme na individuální potřeby a požadavky každého
+            klienta.
+          </>,
+          <>
+            Nabízíme široké spektrum stavebních materiálů a komplexní řízení
+            projektů, abychom zajistili úspěšnou a efektivní realizaci vašich
+            stavebních plánů.
+          </>,
+          <>
+            Poskytujeme komplexní poradenské služby v oblasti stavebnictví,
+            včetně dodávky materiálu a odborného vedení.
+          </>,
+        ],
+        images: [],
+      },
+      ,
+      {
+        serviceName: "Výkopové práce, geodetické zaměření, bourací práce",
+        achievements: [
+          <>
+            S pečlivostí a zkušenostmi provádíme rozsáhlé výkopové práce pro
+            různé typy staveb a projekty.
+          </>,
+          <>
+            Naše geodetické služby zahrnují přesné měření a zaměření pozemků,
+            což je klíčové pro správné plánování a realizaci stavebních
+            projektů.
+          </>,
+          <>
+            Bourací práce provádíme s ohledem na bezpečnost a životní prostředí,
+            abychom zajistili efektivní a bezproblémové odstranění stávajících
+            struktur.
           </>,
         ],
         images: [],
@@ -134,7 +276,7 @@ const about = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Studies",
     institutions: [
       {
@@ -149,11 +291,13 @@ const about = {
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Realizace",
     skills: [
       {
         title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        description: (
+          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+        ),
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -172,7 +316,9 @@ const about = {
       },
       {
         title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        description: (
+          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+        ),
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -190,15 +336,15 @@ const about = {
 const blog = {
   label: "Blog",
   title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
+  description: `Read what ${company.companyName} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
 };
 
 const work = {
-  label: "Work",
-  title: "My projects",
-  description: `Design and dev projects by ${person.name}`,
+  label: "Realizace",
+  title: "Realizace",
+  description: `Design and dev projects by ${company.companyName}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
 };
@@ -206,7 +352,7 @@ const work = {
 const gallery = {
   label: "Gallery",
   title: "My photo gallery",
-  description: `A photo collection by ${person.name}`,
+  description: `A photo collection by ${company.companyName}`,
   // Images from https://pexels.com
   images: [
     {
@@ -282,4 +428,4 @@ const gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { company, social, newsletter, home, about, blog, work, gallery };
