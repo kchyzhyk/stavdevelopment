@@ -13,13 +13,8 @@ const company = {
 
 const newsletter = {
   display: true,
-  title: <>Subscribe to {company.companyName}'s Newsletter</>,
-  description: (
-    <>
-      I occasionally write about design, technology, and share thoughts on the
-      intersection of creativity and engineering.
-    </>
-  ),
+  title: <>Spojte se s nami</>,
+  description: <>Vyplňte náš formulář níže a my se vám co nejdříve ozveme.</>,
 };
 
 const social = [
@@ -77,6 +72,10 @@ const about = {
   calendar: {
     display: true,
     link: "https://cal.com",
+  },
+  location: {
+    display: true,
+    link: "",
   },
   intro: {
     display: true,

@@ -39,6 +39,8 @@ import {
   FaGithub,
   FaInstagram,
   FaLinkedin,
+  FaLocationArrow,
+  FaLocationPin,
   FaPhone,
   FaXTwitter,
 } from "react-icons/fa6";
@@ -77,4 +79,5 @@ export const iconLibrary: Record<string, IconType> = {
   phone: FaPhone,
   clipboard: HiClipboard,
   arrowUpRightFromSquare: HiArrowTopRightOnSquare,
+  location: FaLocationArrow,
 };
