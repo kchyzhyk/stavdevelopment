@@ -48,7 +48,7 @@ const social = [
 const home = {
   label: "Home",
   title: `SERVICE STAV DEVELOPMENT`,
-  description: `Portfolio website showcasing my work as a ${company.role}`,
+  description: `${company.role}`,
   headline: <>Vaše spokojenost je naší prioritou</>,
   subline: (
     <>

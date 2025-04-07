@@ -9,6 +9,10 @@ import {
   RevealFx,
   Arrow,
   Column,
+  Row,
+  Card,
+  Grid,
+  Tag,
 } from "@/once-ui/components";
 import { Projects } from "@/components/work/Projects";
 
@@ -16,6 +20,7 @@ import { baseURL, routes } from "@/app/resources";
 import { home, about, company, newsletter } from "@/app/resources/content";
 import { Mailchimp } from "@/components";
 import { Posts } from "@/components/blog/Posts";
+import Post from "@/components/blog/Post";
 
 export async function generateMetadata() {
   const title = home.title;
@@ -97,6 +102,34 @@ export default function Home() {
             >
               {home.subline}
             </Text>
+          </RevealFx>
+          <RevealFx
+            translateY="8"
+            delay={0.3}
+            fillWidth
+            horizontal="start"
+            paddingBottom="m"
+          >
+            <Flex flex={3} mobileDirection="column">
+              <Grid columns={4} gap="8" mobileColumns="1" marginBottom="8">
+                <Column gap="8" vertical="center" horizontal="center">
+                  <Heading style={{ fontSize: "40px" }}>2005</Heading>
+                  <Tag key="1" label={"rok založení"} variant="neutral" />
+                </Column>
+                <Column gap="8" vertical="center" horizontal="center">
+                  <Heading style={{ fontSize: "40px" }}>54</Heading>
+                  <Tag key="1" label="partnerů" variant="neutral" />
+                </Column>
+                <Column gap="8" vertical="center" horizontal="center">
+                  <Heading style={{ fontSize: "40px" }}>194</Heading>
+                  <Tag key="2" label="úspěšných projektů" variant="neutral" />
+                </Column>
+                <Column gap="8" vertical="center" horizontal="center">
+                  <Heading style={{ fontSize: "40px" }}>38</Heading>
+                  <Tag key="1" label="profesionálů" variant="neutral" />
+                </Column>
+              </Grid>
+            </Flex>
           </RevealFx>
           <RevealFx translateY="12" delay={0.4} horizontal="start">
             <Button
