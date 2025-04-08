@@ -129,23 +129,28 @@ const Carousel: React.FC<CarouselProps> = ({
                 <Flex
                   key={index}
                   style={{
-                    border: activeIndex === index ? "2px solid var(--brand-solid-strong)" : "none",
+                    border:
+                      activeIndex === index
+                        ? "2px solid var(--brand-solid-strong)"
+                        : "none",
                     borderRadius: "var(--radius-m-nest-4)",
                     transition: "border 0.3s ease",
                   }}
                   cursor="interactive"
                   padding="4"
-                  width="80"
-                  height="80"
+                  width="100"
+                  height="100"
                 >
                   <SmartImage
                     alt={image.alt}
+                    objectFit="scale-down"
                     aspectRatio="1 / 1"
-                    sizes="120px"
+                    sizes="40px"
                     src={image.src}
-                    cursor="interactive"
-                    radius="m"
-                    transition="macro-medium"
+                    // cursor="interactive"
+                    // radius="m"
+                    // transition="macro-medium"
+                    // enlarge={true}
                   />
                 </Flex>
               ))}

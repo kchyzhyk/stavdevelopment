@@ -120,7 +120,7 @@ const about = {
         ],
         images: [
           {
-            src: "/images/projects/project-01/cover-01.jpg",
+            src: "/images/projects/random-project/1.avif",
             alt: "Once UI Project",
             width: 16,
             height: 9,
@@ -145,7 +145,14 @@ const about = {
             domov byl přesně takový, jaký si přejete.
           </>,
         ],
-        images: [],
+        images: [
+          {
+            src: "/images/projects/random-project/2.avif",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
       {
         serviceName: "Příprava dokumentace pro zákazníky",
@@ -164,7 +171,14 @@ const about = {
             maximální spokojenost našich klientů.
           </>,
         ],
-        images: [],
+        images: [
+          {
+            src: "/images/projects/random-project/3.avif",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
       ,
       {
@@ -184,7 +198,14 @@ const about = {
             a dlouhodobou spolehlivostí našich stavebních řešení.
           </>,
         ],
-        images: [],
+        images: [
+          {
+            src: "/images/projects/random-project/4.avif",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
       ,
       {
@@ -208,7 +229,14 @@ const about = {
             vaše stavební potřeby.
           </>,
         ],
-        images: [],
+        images: [
+          {
+            src: "/images/projects/random-project/5.avif",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
       ,
       {
@@ -228,7 +256,14 @@ const about = {
             na detail, aby dosáhli nejlepších možných výsledků.
           </>,
         ],
-        images: [],
+        images: [
+          {
+            src: "/images/projects/random-project/6.avif",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
       ,
       {
@@ -249,7 +284,14 @@ const about = {
             včetně dodávky materiálu a odborného vedení.
           </>,
         ],
-        images: [],
+        images: [
+          {
+            src: "/images/projects/random-project/7.avif",
+            alt: "Once UI Project",
+            width: 16,
+            height: 12,
+          },
+        ],
       },
       ,
       {
@@ -290,38 +332,32 @@ const about = {
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Realizace",
+    title: "Naše realizace",
     skills: [
       {
-        title: "Figma",
-        description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
-        ),
-        // optional: leave the array empty if you don't want to display images
+        title: "",
+        description: "",
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
+            src: "/images/projects/random-project/1.avif",
             alt: "Project image",
             width: 16,
             height: 9,
           },
           {
-            src: "/images/projects/project-01/cover-03.jpg",
+            src: "/images/projects/random-project/2.avif",
             alt: "Project image",
             width: 16,
             height: 9,
           },
-        ],
-      },
-      {
-        title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
-        // optional: leave the array empty if you don't want to display images
-        images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
+            src: "/images/projects/random-project/3.avif",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/random-project/4.avif",
             alt: "Project image",
             width: 16,
             height: 9,
@@ -334,7 +370,7 @@ const about = {
 
 const blog = {
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "Naše rady pro úspešné realizace vašich objektu",
   description: `Read what ${company.companyName} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route

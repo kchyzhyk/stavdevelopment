@@ -6,6 +6,7 @@ import {
   Heading,
   Icon,
   IconButton,
+  RevealFx,
   Row,
   SmartImage,
   Tag,
@@ -372,11 +373,10 @@ export default function About() {
                 as="h2"
                 id={about.technical.title}
                 variant="display-strong-s"
-                marginBottom="40"
               >
                 {about.technical.title}
               </Heading>
-              <Column fillWidth gap="l">
+              <Column fillWidth gap="l" marginBottom="20">
                 {about.technical.skills.map((skill, index) => (
                   <Column key={`${skill}-${index}`} fillWidth gap="4">
                     <Text variant="heading-strong-l">{skill.title}</Text>
@@ -412,6 +412,27 @@ export default function About() {
                   </Column>
                 ))}
               </Column>
+              <RevealFx translateY="12" delay={0.4} horizontal="start">
+                <Button
+                  id="work"
+                  data-border="rounded"
+                  href="/work"
+                  variant="secondary"
+                  size="m"
+                  arrowIcon
+                >
+                  <Flex gap="8" vertical="center">
+                    <Icon
+                      style={{
+                        marginLeft: "-0.75rem",
+                        marginRight: "0.25rem",
+                      }}
+                      name="person"
+                    />
+                    Uvidiet viac
+                  </Flex>
+                </Button>
+              </RevealFx>
             </>
           )}
         </Column>

@@ -1,6 +1,14 @@
 "use client";
 
-import { Column, Flex, Heading, SmartImage, SmartLink, Tag, Text } from "@/once-ui/components";
+import {
+  Column,
+  Flex,
+  Heading,
+  SmartImage,
+  SmartLink,
+  Tag,
+  Text,
+} from "@/once-ui/components";
 import styles from "./Posts.module.scss";
 import { formatDate } from "@/app/utils/formatDate";
 
@@ -28,7 +36,7 @@ export default function Post({ post, thumbnail }: PostProps) {
         paddingX="16"
         gap="32"
       >
-        {post.metadata.image && thumbnail && (
+        {post.metadata.image && (
           <SmartImage
             priority
             maxWidth={20}
@@ -42,17 +50,21 @@ export default function Post({ post, thumbnail }: PostProps) {
             aspectRatio="16 / 9"
           />
         )}
+
         <Column position="relative" fillWidth gap="8" vertical="center">
           <Heading as="h2" variant="heading-strong-l" wrap="balance">
             {post.metadata.title}
           </Heading>
           <Text variant="label-default-s" onBackground="neutral-weak">
-            {post.metadata.publishedAt && formatDate(post.metadata.publishedAt, false)}
+            {post.metadata.publishedAt &&
+              formatDate(post.metadata.publishedAt, false)}
           </Text>
           {tags.length > 0 && (
             <Flex gap="8">
               {tags.map((tag: string, index: number) =>
-                index < 3 ? <Tag key={index} label={tag} variant="neutral" /> : null
+                index < 3 ? (
+                  <Tag key={index} label={tag} variant="neutral" />
+                ) : null
               )}
             </Flex>
           )}
