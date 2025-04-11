@@ -126,6 +126,7 @@ const about = {
             height: 9,
           },
         ],
+        icon: "🏢",
       },
       {
         serviceName: "Rekonstrukce domů",
@@ -153,6 +154,7 @@ const about = {
             height: 9,
           },
         ],
+        icon: "🏡",
       },
       {
         serviceName: "Příprava dokumentace pro zákazníky",
@@ -179,6 +181,7 @@ const about = {
             height: 9,
           },
         ],
+        icon: "💼",
       },
       ,
       {
@@ -206,6 +209,7 @@ const about = {
             height: 9,
           },
         ],
+        icon: "🏗️",
       },
       ,
       {
@@ -237,6 +241,7 @@ const about = {
             height: 9,
           },
         ],
+        icon: "🧱",
       },
       ,
       {
@@ -264,6 +269,7 @@ const about = {
             height: 9,
           },
         ],
+        icon: "🦺",
       },
       ,
       {
@@ -292,6 +298,7 @@ const about = {
             height: 12,
           },
         ],
+        icon: "👷🏻‍♂️",
       },
       ,
       {
@@ -313,6 +320,7 @@ const about = {
           </>,
         ],
         images: [],
+        icon: "🛠️",
       },
     ],
   },

@@ -276,11 +276,11 @@ export default function About() {
                     <Flex
                       fillWidth
                       horizontal="space-between"
-                      vertical="end"
+                      vertical="center"
                       marginBottom="4"
                     >
                       <Text id={service.serviceName} variant="heading-strong-l">
-                        🛠️ {service.serviceName}
+                        {service.icon} {service.serviceName}
                       </Text>
                     </Flex>
                     <Text
@@ -391,9 +391,9 @@ export default function About() {
                             border="neutral-medium"
                             radius="m"
                             //@ts-ignore
-                            minWidth={image.width}
+                            minWidth={16}
                             //@ts-ignore
-                            height={image.height}
+                            height={9}
                           >
                             <SmartImage
                               enlarge

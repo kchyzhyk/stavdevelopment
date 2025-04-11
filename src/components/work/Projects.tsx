@@ -22,10 +22,10 @@ export function Projects({ range }: ProjectsProps) {
 
   return (
     <Column fillWidth gap="xl" marginBottom="40" paddingX="l">
-      {" "}
       {displayedProjects.map((post, index) => (
         <Row fillWidth>
           <ProjectCard
+            range={range}
             priority={index < 2}
             key={post.slug}
             href={`work/${post.slug}`}
@@ -41,7 +41,6 @@ export function Projects({ range }: ProjectsProps) {
           />
         </Row>
       ))}
-      {/* <Column>2</Column> */}
     </Column>
   );
 }

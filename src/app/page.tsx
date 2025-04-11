@@ -155,7 +155,30 @@ export default function Home() {
         </Column>
       </Column>
       <RevealFx translateY="16" delay={0.6}>
-        <Projects range={[1, 1]} />
+        <Flex fillWidth mobileDirection="column" wrap gap="24">
+          <Heading as="h1" paddingX="32">
+            Naše služby
+          </Heading>
+          <Grid columns={4} gap="8" mobileColumns="1">
+            {about.work.services.map((service, index) => (
+              <Flex
+                gap="8"
+                direction="column"
+                vertical="center"
+                horizontal="center"
+                border="brand-weak"
+                padding="24"
+                radius="m"
+                background="page"
+              >
+                <Heading as="h1">{service.icon}</Heading>
+                <Text align="center" wrap="balance">
+                  {service.serviceName}
+                </Text>
+              </Flex>
+            ))}
+          </Grid>
+        </Flex>
       </RevealFx>
       {routes["/blog"] && (
         <Flex fillWidth gap="24" mobileDirection="column">
@@ -165,11 +188,11 @@ export default function Home() {
             </Heading>
           </Flex>
           <Flex flex={3} paddingX="20">
-            <Posts range={[1, 2]} columns="2" />
+            <Posts range={[1, 2]} columns="1" />
           </Flex>
         </Flex>
       )}
-      <Projects range={[2]} />
+      <Projects range={[1, 1]} />
       {newsletter.display && <Mailchimp newsletter={newsletter} />}
     </Column>
   );
