@@ -18,9 +18,10 @@ import { Projects } from "@/components/work/Projects";
 
 import { baseURL, routes } from "@/app/resources";
 import { home, about, company, newsletter } from "@/app/resources/content";
-import { Mailchimp } from "@/components";
+import { Header, Mailchimp } from "@/components";
 import { Posts } from "@/components/blog/Posts";
 import Post from "@/components/blog/Post";
+import { Calculator } from "@/components/Calculator";
 
 export async function generateMetadata() {
   const title = home.title;
@@ -178,6 +179,11 @@ export default function Home() {
               </Flex>
             ))}
           </Grid>
+        </Flex>
+      </RevealFx>
+      <RevealFx>
+        <Flex direction="column" horizontal="center" gap="24" fillWidth>
+          <Calculator />
         </Flex>
       </RevealFx>
       {routes["/blog"] && (

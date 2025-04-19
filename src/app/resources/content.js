@@ -7,8 +7,8 @@ const company = {
   },
   role: "Stavební firma",
   avatar: "/images/avatar.jpg",
-  location: "Europe/Brno", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Český"], // optional: Leave the array empty if you don't want to display languages
+  location: "Europe/Brno", 
+  languages: ["English", "Český"],
 };
 
 const newsletter = {
@@ -102,7 +102,7 @@ const about = {
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Naše služby",
     services: [
       {
@@ -399,72 +399,72 @@ const gallery = {
   // Images from https://pexels.com
   images: [
     {
-      src: "/images/gallery/img-01.jpg",
-      alt: "image",
+      src: "/images/projects/random-project/1.avif",
+      alt: "image1",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-02.jpg",
-      alt: "image",
+      src: "/images/projects/random-project/2.avif",
+      alt: "image2",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-03.jpg",
-      alt: "image",
+      src: "/images/projects/random-project/3.avif",
+      alt: "image3",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-04.jpg",
-      alt: "image",
+      src: "/images/projects/random-project/4.avif",
+      alt: "image4",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-05.jpg",
-      alt: "image",
+      src: "/images/projects/random-project/5.avif",
+      alt: "image5",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-06.jpg",
-      alt: "image",
+      src: "/images/projects/random-project/6.avif",
+      alt: "image6",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-07.jpg",
-      alt: "image",
+      src: "/images/projects/random-project/7.avif",
+      alt: "image7",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-08.jpg",
-      alt: "image",
+      src: "/images/projects/work-1/photo_1.jpg",
+      alt: "image8",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-09.jpg",
-      alt: "image",
+      src: "/images/projects/work-1/photo_2.jpg",
+      alt: "image9",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-10.jpg",
-      alt: "image",
+      src: "/images/projects/work-1/photo_3.jpg",
+      alt: "image10",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-11.jpg",
-      alt: "image",
+      src: "/images/projects/work-1/photo_4.jpg",
+      alt: "image11",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-12.jpg",
+      src: "/images/projects/work-1/photo_5.jpg",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-13.jpg",
+      src: "/images/projects/work-1/photo_6.jpg",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/img-14.jpg",
+      src: "/images/projects/work-1/photo_7.jpg",
       alt: "image",
       orientation: "horizontal",
     },
